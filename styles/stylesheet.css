@@ -1,0 +1,80 @@
+html {
+  font-size: 100%;  /* RWD */
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+img {
+  max-width: 100%;                 
+}
+.offscreen {
+  position: absolute;
+  left: -1000000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  }
+.logo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.3rem;
+  font-family: 'League Script', cursive;
+  font-size: 2rem;
+}
+nav {
+  margin: 3.6rem 0;
+  font-family: 'Merriweather', serif;
+}
+ul{
+  width: 100%;
+  display: inline-flex;
+  flex-direction: row;
+  list-style-type: none;
+  color: black;
+}
+
+li{
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  flex-grow: 1;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+}
+.bracket a:before,.bracket a:after {
+    display: inline-block;
+    opacity: 0;
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+    -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+    transition: transform 0.3s, opacity 0.2s;
+}
+.bracket a:before {
+    margin-right: 10px;
+    content: '[';
+    -webkit-transform: translate(20px);
+    -moz-transform: translate(20px);
+    transform: translate(20px);
+}
+.bracket a:after {
+    margin-left: 10px;
+    content: ']';
+    -webkit-transform: translate(-20px);
+    -moz-transform: translate(-20px);
+    transform: translate(-20px);
+}
+.bracket a:hover:before,
+.bracket a:hover:after,
+.bracket a:focus:before,
+.bracket a:focus:after {
+    opacity: 1;
+    -webkit-transform: translate(0px);
+    -moz-transform: translate(0px);
+    transform: translate(0px);
+}
