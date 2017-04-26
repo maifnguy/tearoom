@@ -1,13 +1,17 @@
-html {
-  font-size: 100%;  /* RWD */
-}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+}
+html {
+  font-size: 100%;  
+}
+main {
+  font-family: 'Merriweather', serif;
+}
 img {
-  max-width: 100%;                 
+  max-width: 100%;
+  height: auto;
 }
 .offscreen {
   position: absolute;
@@ -17,7 +21,7 @@ img {
   height: 1px;
   overflow: hidden;
   }
-.logo{
+.logo {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -25,6 +29,20 @@ img {
   line-height: 1.3rem;
   font-family: 'League Script', cursive;
   font-size: 2rem;
+  font-weight: bold;
+}
+.logo2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.3rem;
+  font-family: 'League Script', cursive;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.nav2 ul, .logo2 {
+  display: none;
 }
 nav {
   margin: 3.6rem 0;
@@ -37,7 +55,6 @@ ul{
   list-style-type: none;
   color: black;
 }
-
 li{
   height: 50px;
   line-height: 50px;
@@ -47,6 +64,20 @@ li{
 nav a {
   text-decoration: none;
   color: black;
+}
+@media screen and (max-width: 600px){
+.logo2{
+  display: block;
+  }
+.nav2 ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav1 {
+        display:none;
+  }
 }
 .bracket a:before,.bracket a:after {
     display: inline-block;
@@ -77,4 +108,11 @@ nav a {
     -webkit-transform: translate(0px);
     -moz-transform: translate(0px);
     transform: translate(0px);
+}
+.slides {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem 0;
 }
