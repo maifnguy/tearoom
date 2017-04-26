@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Welcome to the Quartet Tearoom</title>
+    <title>Quartet Tearoom</title>
     <meta charset="utf-8">
     
     <!--  FontAwesome Script  -->
@@ -19,8 +19,13 @@
    <header> 
       <!--  for screen readers  -->
       <a href="#content" class="offscreen">Skip to content</a> 
-  
-      <nav> 
+      
+     <div class="logo2">
+        <a href="index.html"><img src="images/logo.png" alt="" width="150" height="150" onmouseover="this.src='images/logo2.png'" onmouseout="this.src='images/logo.png'"></a>
+        <p>Quartet</p>
+        <p>Tearoom</p>
+     </div>  
+      <nav class="nav1"> 
         <ul>
           <li class="bracket"><a href="index.html" class="navbar">HOME</a></li>
           <li class="bracket"><a href="menu.html" class="navbar">MENU</a></li>
@@ -29,37 +34,77 @@
           <li class="bracket"><a href="contact.html" class="navbar">CONTACT</a></li>
         </ul> 
       </nav>
+      <nav class="nav2"> 
+        <ul>
+          <li class="bracket"><a href="index.html" class="navbar">HOME</a></li>
+          <li class="bracket"><a href="menu.html" class="navbar">MENU</a></li>
+          <li class="bracket"><a href="events.html" class="navbar">EVENTS</a></li>
+          <li class="bracket"><a href="contact.html" class="navbar">CONTACT</a></li>
+        </ul> 
+      </nav>
     </header>
     <main>
       <section class="slides">
         <img class="slideshow" src="images/main-img1-1200w.jpg"
+             alt="a bright cozy cafe with a chandelier"
              srcset="images/main-img1-1200w.jpg 1200w,
                      images/main-img1-1000w.jpg 1000w,
                      images/main-img1-800w.jpg 800w,
                      images/main-img1-500w.jpg 500w
                      images/main-img1-300w.jpg 300w"
-             sizes="(max-width: 500px) 300px, (max-width: 700px) 500px, (max-width: 1000px) 800px, (max-width: 1200px) 1000px, (min-width: 1600px) 1200px">
+             sizes="(max-width: 500px) 300px, (max-width: 800px) 500px, (max-width: 1000px) 800px, (max-width: 1400px) 1000px, (min-width: 1600px) 1200px">
         <img class="slideshow" src="images/main-img2-1200w.jpg"
+             alt="cafe counter with snacks and decorations"
              srcset="images/main-img2-1200w.jpg 1200w,
                      images/main-img2-1000w.jpg 1000w,
                      images/main-img2-800w.jpg 800w,
                      images/main-img2-500w.jpg 500w
                      images/main-img2-300w.jpg 300w"
-             sizes="(max-width: 500px) 300px, (max-width: 700px) 500px, (max-width: 1000px) 800px, (max-width: 1200px) 1000px, (min-width: 1600px) 1200px">
+             sizes="(max-width: 500px) 300px, (max-width: 800px) 500px, (max-width: 1000px) 800px, (max-width: 1400px) 1000px, (min-width: 1600px) 1200px">
         
         <img class="slideshow" src="images/main-img3-1200w.jpg"
+             alt="ladies dressed up to have tea and snacks"
              srcset="images/main-img3-1200w.jpg 1200w,
                      images/main-img3-1000w.jpg 1000w,
                      images/main-img3-800w.jpg 800w,
                      images/main-img3-500w.jpg 500w
                      images/main-img3-300w.jpg 300w"
-             sizes="(max-width: 500px) 300px, (max-width: 700px) 500px, (max-width: 1000px) 800px, (max-width: 1200px) 1000px, (min-width: 1601px) 1200px">
+             sizes="(max-width: 500px) 300px, (max-width: 800px) 500px, (max-width: 1000px) 800px, (max-width: 1400px) 1000px, (min-width: 1601px) 1200px">
+      </section>
+      
+      <section class="container">
+        <div class="block1">
+          <h2>Afternoon Tea</h2>
+          <p>Indulge in an authentic Victorian afternoon tea experience, with our wide selection of teas, champagnes and pastries. We also offer afternoon tea for children and guests with dietary restrictions. Please see our <a href="menu.html">Menu</a> page for more information. Join us for a performance by the Doughnut String Quartet, every afternoon from 3pm.</p>
+        </div>
+        
+        <div class="block2">
+          <h2>Hours</h2>
+          <table>
+            <tr>
+              <th></th>
+              <th></th>
+            </tr>
+            <tr>
+              <td>Monday to Friday:</td>
+              <td>9am - 5pm</td>
+            </tr>
+            <tr>
+              <td>Weekends:</td>
+              <td>8am - 6pm</td>
+            </tr>
+          </table>
+          <button class="booking" type="button" ><a href="https://www.opentable.com" target="_blank">Book a Table</a></button>
+        </div>
       </section>
     
       <!--  for screen readers  -->
       <div id="content"></div>
     </main>
-    
+    <footer>
+      <p>Quartet Tearoom</p>
+      <p>500 Victorian Ave, Seattle, WA 98101</p>
+    </footer>
      <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>
