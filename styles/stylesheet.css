@@ -9,6 +9,9 @@ html {
 main {
   font-family: 'Merriweather', serif;
 }
+h1 {
+  text-align: center;
+}
 img {
   max-width: 100%;
   height: auto;
@@ -28,7 +31,15 @@ img {
   align-items: center;
   line-height: 1.3rem;
   font-family: 'League Script', cursive;
+  font-weight: bold;
+}
+.logo-name {
   font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'League Script', cursive;
   font-weight: bold;
 }
 .logo2 p {
@@ -38,7 +49,7 @@ img {
   display: none;
 }
 .nav1 {
-  margin: 3.6rem 0;
+  margin: 3.6rem 0; 
   font-family: 'Merriweather', serif;
 }
 ul{
@@ -56,7 +67,8 @@ li{
 }
 nav a {
   text-decoration: none;
-  color: black;
+  color: black !important;
+  display: inline-block !important;
 }
 @media screen and (max-width: 630px){
   .nav1 {
@@ -156,8 +168,19 @@ h2 {
 }
 table {
   margin: auto;
+  width: 80%;
+  border-spacing: 0.5rem;
 }
-@media screen and (max-width: 800px){
+td{
+  text-align: center;
+  line-height: 1.3rem;
+  margin: 0 auto;
+}
+th {
+  text-align: center;
+  color: darkgoldenrod; 
+}
+@media screen and (max-width: 850px){
   .container {
     display: flex;
     flex-direction: column;
@@ -184,5 +207,122 @@ footer {
   padding: 1rem;
   font-family: 'Merriweather', serif;
   font-size: 0.8rem;
-  line-height: 1.5rem;
+  line-height: 0.7rem;
 }
+
+/* ----- MENU -----*/
+.menu {
+  margin: 0 auto;
+  width: 90%;
+}
+.menu h2 {
+  font-weight: bold;
+  text-align: center;
+  font-family: 'Lora', serif;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 1rem 0;  
+}
+.menu-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+@media screen and (max-width: 600px){
+  .menu-items {
+    text-align: center;
+  }
+}
+.menu-items h3 {
+  font-size: 1.2rem;
+}
+.img-block {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0;
+}
+.images {
+  margin-bottom: 1rem;
+}
+.modular {
+  padding: 0;
+  margin: 0;
+}
+.item {
+  float: left;
+  margin: 0;
+}
+.price {
+  float: right;
+}
+.wrapper ,.wrapper2 {
+  margin: 0;
+}
+.wrapper h2, .wrapper2 h2 {
+  padding: 0rem 0
+}
+.wrapper2 h4, .wrapper2 p {
+  text-align: center;
+  line-height: 2rem;
+}
+.wrapper2 h4 {
+ color: pink;
+}
+.panel-group .panel {
+  border-radius: 0;
+  box-shadow: none;
+  border-color: #EEEEEE;
+}
+.panel-default > .panel-heading {
+  padding: 0;
+  border-radius: 0;
+  color: #212121;
+  background-color: black;
+  border-color: #EEEEEE;
+}
+.panel-title {
+  font-size: 14px;
+  background-color: aliceblue;
+}
+.panel-title a:hover {
+  background-color: antiquewhite;
+}
+
+.panel-title > a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+}
+.panel-title > a:active {
+  background-color: antiquewhite;
+}
+.more-less {
+  float: right;
+  color: #212121;
+}
+.panel-default > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #EEEEEE;
+}
+.panel-heading .accordion-toggle:after {
+  font-family: 'Glyphicons Halflings';  
+  content: "";    
+  float: left;        
+  color: hotpink;
+  margin-right: 15px;
+}
+.panel-heading .accordion-toggle.collapsed:after {
+  content: ""; 
+  color: pink;
+}
+.glyphicon:before {
+  margin-right: 15px;
+}
+.no-margin {
+  margin: 0;
+}
+
