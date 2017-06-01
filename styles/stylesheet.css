@@ -361,3 +361,17 @@ footer {
   transform: translateY(0);
 }
 
+
+/* ----- CONTACT -----*/
+.contact-form {
+  width: 45%;
+  margin: 0 auto;
+}
+input, select {
+  width: 100%;
+  height: 2.3rem;
+}
+textarea {
+  width: 100%;
+  height: 7rem;
+}
