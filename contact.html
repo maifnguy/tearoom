@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Quartet Tearoom</title>
+    <meta charset="utf-8">
+    
+    <!--  FontAwesome Script  -->
+    <script src="https://use.fontawesome.com/43d4417970.js"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=League+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+   
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    
+   
+    <!--  Stylesheets  -->
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/stylesheet.css"/> 
+  </head>
+  
+  <body>
+   <header> 
+     <!--  For screen readers  ----------------->
+     <a href="#content" class="offscreen">Skip to content</a> 
+
+     <!-- Center logo --------------------------> 
+     <div class="logo2">
+       <a href="index.html"><img src="images/logo.png" alt="" width="150" height="150" onmouseover="this.src='images/logo2.png'" onmouseout="this.src='images/logo.png'"></a>
+     </div>
+     
+     <!-- Nav ---------------------------------->
+     <nav class="nav1"> 
+       <ul>
+         <li class="bracket"><a href="index.html" class="navbar">HOME</a></li>
+         <li class="bracket"><a href="menu.html" class="navbar">MENU</a></li>
+         <li class="logo"><a href="index.html"><img src="images/logo.png" alt="" width="150" height="150" onmouseover="this.src='images/logo2.png'" onmouseout="this.src='images/logo.png'"></a></li>
+         <li class="bracket"><a href="events.html" class="navbar">EVENTS</a></li>
+         <li class="bracket"><a href="contact.html" class="navbar">CONTACT</a></li>
+       </ul> 
+     </nav>
+     <div class="logo-name">
+      <p>Quartet Tearoom</p>
+     </div>
+    
+     <nav class="nav2"> 
+       <ul>
+         <li class="bracket"><a href="index.html" class="navbar">HOME</a></li>
+         <li class="bracket"><a href="menu.html" class="navbar">MENU</a></li>
+         <li class="bracket"><a href="events.html" class="navbar">EVENTS</a></li>
+         <li class="bracket"><a href="contact.html" class="navbar">CONTACT</a></li
+       </ul> 
+      </nav>
+    </header>
+    
+     
+    <main>
+      <!--  for screen readers  -->
+      <div id="content"></div>
+      
+      <div class="contact-form">
+        <h1>Contact Form</h1>
+        <form>
+          <label for="name">Name</label>
+          <input type="text" name="name" required>
+          <label for="phone">Phone</label>
+          <input type="tel" name="tel">
+          <label for="email">Email</label>
+          <input type="email" name="email">
+          <label for="event" name="event">Events</label>
+          <select>
+            <option value="select">Select</option>
+            <option value="birthday">Birthday Party</option>
+            <option value="special-occasion">Special Occasion</option>
+            <option value="corporate">Corporate Party</option>
+            <option value="other">Other</option>
+          </select>
+          <label for="message" required>Message</label>
+          <textarea name="message"></textarea>
+          <button type="button" class="submit" name="submit">Submit</button>
+        </form>
+      </div>
+     
+    <footer>
+      <p>Quartet Tearoom</p>
+      <p>500 Victoria Ave, Seattle, WA 98101</p>
+      <ul class= "icons">
+        <li><a href="" target="_blank"><img src="images/facebook-icon.png" alt="facebook icon" width="40"></li>
+        <li><a href="" target="_blank"><img src="images/instagram-icon.png" alt="instagram icon" width="40"></li>
+        <li><a href="" target="_blank"><img src="images/twitter-icon.png" alt="twitter icon" width="40"></li>
+        <li><a href="" target="_blank"><img src="images/pinterest-icon.png" alt="pinterest icon" width="40"></li>
+      </ul> 
+    </footer>
+     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script> 
+  </body>
+</html>
