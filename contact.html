@@ -66,12 +66,42 @@
     </header>
     
      
-    <main>
+    <main class="dots">
       <!--  for screen readers  -->
       <div id="content"></div>
+      <h1>Contact and Locations</h1>
+      <div class="row add-map">
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 contact-us">
+          <h2>Seattle</h2>
+          <p><strong>Quartet Tearoom</strong><p>
+          <p>500 Victoria Ave, Seattle, WA 98101</p>
+          <p>quartet-seattle@gmail.com</p>
+          <p>123-456-7890</p> <br>
+        
+          <h2>Cambridge</h2>
+          <p><strong>Quartet Tearoom</strong><p>
+          <p>200 Garden St, Cambridge, MA 02138</p>
+          <p>quartet-cambridge@gmail.com</p>
+          <p>012-345-6789</p>
+        </div><br>
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 contact-us">
+          <h2>Map</h2>
+          <form>
+            <select id="select">
+            <option value="">Select</option>
+            <option value="seattle" id="seattle">Seattle</option>
+            <option value="cambridge" id="cambridge">Cambridge</option>
+            </select>
+          </form>
+          <div id="google-map" style="width:90%;height:350px;">
+          </div>
+        </div>
+      </div>
+      
+     
       
       <div class="contact-form">
-        <h1>Contact Form</h1>
+        <h3>Contact Form</h3>
         <form>
           <label for="name">Name</label>
           <input type="text" name="name" required>
@@ -79,6 +109,24 @@
           <input type="tel" name="tel">
           <label for="email">Email</label>
           <input type="email" name="email">
+          <label for="location">Location</label>
+            <label>
+              Seattle<input type="radio" name="location" value="seattle">
+            </label>
+            <label>
+              Cambridge<input type="radio" name="location" value="cambridge">
+            </label><br>
+          
+
+<!--
+          Location<br>
+          <label>Seattle
+            <input type="radio" name="location" value="seattle">
+          </label>
+          <label>Cambridge
+            <input type="radio" name="location" value="cambridge">
+          </label><br>
+-->
           <label for="event" name="event">Events</label>
           <select>
             <option value="select">Select</option>
@@ -95,15 +143,17 @@
      
     <footer>
       <p>Quartet Tearoom</p>
-      <p>500 Victoria Ave, Seattle, WA 98101</p>
+      <p>500 Victoria Ave, Seattle, WA 98101  &nbsp;&nbsp;&nbsp;&nbsp; &#124; &nbsp;&nbsp;&nbsp;&nbsp; 200 Garden St, Cambridge, MA 02138</p>
       <ul class= "icons">
-        <li><a href="" target="_blank"><img src="images/facebook-icon.png" alt="facebook icon" width="40"></li>
-        <li><a href="" target="_blank"><img src="images/instagram-icon.png" alt="instagram icon" width="40"></li>
-        <li><a href="" target="_blank"><img src="images/twitter-icon.png" alt="twitter icon" width="40"></li>
-        <li><a href="" target="_blank"><img src="images/pinterest-icon.png" alt="pinterest icon" width="40"></li>
+        <li><span><a href="" target="_blank"><img src="images/facebook-icon.png" alt="facebook icon" width="40"></a></span></li>
+        <li><span><a href="" target="_blank"><img src="images/instagram-icon.png" alt="instagram icon" width="40"></a></span></li>
+        <li><span><a href="" target="_blank"><img src="images/twitter-icon.png" alt="twitter icon" width="40"></a></span></li>
+        <li><span><a href="" target="_blank"><img src="images/pinterest-icon.png" alt="pinterest icon" width="40"></a></span></li>
       </ul> 
     </footer>
-     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0uReli5jlaZYstDxZBhqIqvB52UeAM4I&callback=initMap"
+    async defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script> 
   </body>
