@@ -53,14 +53,14 @@ img {
   margin: 3.6rem 0; 
   font-family: 'Merriweather', serif;
 }
-ul{
+nav ul, footer ul{
   width: 100%;
   display: inline-flex;
   flex-direction: row;
-  list-style-type: none;
+  list-style: none;
   color: black;
 }
-li{
+nav li, footer li{
   height: 50px;
   line-height: 50px;
   text-align: center;
@@ -167,6 +167,9 @@ h2 {
   width: 40%;
   text-align: center;
 }
+.block2 button {
+  margin-top: 2rem;
+}
 table {
   margin: auto;
   width: 80%;
@@ -200,15 +203,38 @@ th {
     width: 90%;
     }
 }
+.address {
+  text-align: 
+}
+.icons span {
+  display: block;
+  height: 60px;
+  width: 60px;
+  line-height: 60px;
+  -moz-border-radius: 30px; 
+  border-radius: 30px; 
+  background-color: white;
+}
+.icons li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   padding: 1rem;
   font-family: 'Merriweather', serif;
   font-size: 0.8rem;
   line-height: 0.7rem;
+}
+hr.vertical {
+  width: 0px;
+  height: 100%;
 }
 
 /* ----- MENU -----*/
@@ -245,7 +271,6 @@ footer {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-  
   padding: 0;
 }
 .images {
@@ -273,7 +298,7 @@ footer {
   line-height: 2rem;
 }
 .wrapper2 h4 {
- color: pink;
+ color: burlywood;
 }
 .panel-group .panel {
   border-radius: 0;
@@ -294,7 +319,6 @@ footer {
 .panel-title a:hover {
   background-color: antiquewhite;
 }
-
 .panel-title > a {
   display: block;
   padding: 15px;
@@ -339,7 +363,7 @@ footer {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.4);
   color: white;
   visibility: hidden;
   opacity: 0;
@@ -357,21 +381,65 @@ footer {
   transform: translateY(1em);
   text-align: center;
 }
+.img-description p {
+  font-size: 1rem;
+  padding: 0.5rem;
+  line-height: 1.6rem;
+}
+.img-description a {
+  color: lightpink;
+}
 .img-wrap:hover .img-description {
   transform: translateY(0);
 }
-
+.options {
+  padding-top: 1rem;
+}
+.options li {
+  list-style: none;
+  font-size: 1.1rem;
+  line-height: 1.8rem;
+}
+.glyphicon-option-horizontal:before {
+  margin-right: 15px;
+  margin-left: 15px;
+}
 
 /* ----- CONTACT -----*/
 .contact-form {
   width: 45%;
   margin: 0 auto;
 }
-input, select {
+.contact-form h3 {
+  text-align: center;
+}
+.contact-us {
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.8rem;
+  padding: 1rem 0;
+}
+.contact-form input, .contact-form select {
   width: 100%;
   height: 2.3rem;
 }
 textarea {
   width: 100%;
   height: 7rem;
+}
+.dots {
+  background: url("../images/dot.png") no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+};
+.add-map {
+  width: 85%;
+}
+#google-map {
+  margin: 0 auto;
+}
+.oneline {
+  display: inline;
 }
