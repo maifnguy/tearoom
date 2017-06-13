@@ -71,7 +71,7 @@
       <div id="content"></div>
       <h1>Contact and Locations</h1>
       <div class="row add-map">
-        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 contact-us">
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 contact-us">
           <h2>Seattle</h2>
           <p><strong>Quartet Tearoom</strong><p>
           <p>500 Victoria Ave, Seattle, WA 98101</p>
@@ -84,11 +84,10 @@
           <p>quartet-cambridge@gmail.com</p>
           <p>012-345-6789</p>
         </div><br>
-        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 contact-us">
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 contact-us">
           <h2>Map</h2>
           <form>
             <select id="select">
-            <option value="">Select</option>
             <option value="seattle" id="seattle">Seattle</option>
             <option value="cambridge" id="cambridge">Cambridge</option>
             </select>
@@ -109,24 +108,12 @@
           <input type="tel" name="tel">
           <label for="email">Email</label>
           <input type="email" name="email">
-          <label for="location">Location</label>
-            <label>
-              Seattle<input type="radio" name="location" value="seattle">
-            </label>
-            <label>
-              Cambridge<input type="radio" name="location" value="cambridge">
-            </label><br>
-          
-
-<!--
-          Location<br>
-          <label>Seattle
-            <input type="radio" name="location" value="seattle">
-          </label>
-          <label>Cambridge
-            <input type="radio" name="location" value="cambridge">
-          </label><br>
--->
+          <label for="location">Location</label><br>
+          <select>
+            <option value="select">Select</option>
+            <option value="seattle">Seattle</option>
+            <option value="cambridge">Cambridge</option>
+          </select>
           <label for="event" name="event">Events</label>
           <select>
             <option value="select">Select</option>
@@ -142,8 +129,15 @@
       </div>
      
     <footer>
-      <p>Quartet Tearoom</p>
-      <p>500 Victoria Ave, Seattle, WA 98101  &nbsp;&nbsp;&nbsp;&nbsp; &#124; &nbsp;&nbsp;&nbsp;&nbsp; 200 Garden St, Cambridge, MA 02138</p>
+      <div class="footer1">
+        <p>Quartet Tearoom</p>
+        <p>500 Victoria Ave, Seattle, WA 98101  &nbsp;&nbsp;&nbsp;&nbsp; &#124; &nbsp;&nbsp;&nbsp;&nbsp; 200 Garden St, Cambridge, MA 02138</p>
+      </div>
+      <div class="footer2">
+        <p>Quartet Tearoom</p>
+        <p>500 Victoria Ave, Seattle, WA 98101</p>
+        <p>200 Garden St, Cambridge, MA 02138</p>
+      </div>
       <ul class= "icons">
         <li><span><a href="" target="_blank"><img src="images/facebook-icon.png" alt="facebook icon" width="40"></a></span></li>
         <li><span><a href="" target="_blank"><img src="images/instagram-icon.png" alt="instagram icon" width="40"></a></span></li>

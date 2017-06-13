@@ -11,29 +11,42 @@
     <link href="https://fonts.googleapis.com/css?family=League+Script" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
     
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
     <!--  Normalize.css/Custom Stylesheet  -->
     <link rel="stylesheet" type="text/css" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/stylesheet.css"/> 
   </head>
   <body>
    <header> 
-      <!--  for screen readers  -->
-      <a href="#content" class="offscreen">Skip to content</a> 
-      
+     <!--  for screen readers  -->
+     <a href="#content" class="offscreen">Skip to content</a> 
+     
+     <!-- logo to be displayed with nav2 when stacked -->
      <div class="logo2">
-        <a href="index.html"><img src="images/logo.png" alt="" width="150" height="150" onmouseover="this.src='images/logo2.png'" onmouseout="this.src='images/logo.png'"></a>
-        <p>Quartet</p>
-        <p>Tearoom</p>
+       <a href="index.html"><img src="images/logo.png" alt="" width="150" height="150" onmouseover="this.src='images/logo2.png'" onmouseout="this.src='images/logo.png'"></a>
      </div>  
-      <nav class="nav1"> 
-        <ul>
-          <li class="bracket"><a href="index.html" class="navbar">HOME</a></li>
-          <li class="bracket"><a href="menu.html" class="navbar">MENU</a></li>
-          <li class="logo"><a href="index.html"><img src="images/logo.png" alt="" width="150" height="150" onmouseover="this.src='images/logo2.png'" onmouseout="this.src='images/logo.png'"></a><p>Quartet Tearoom</p></li>
-          <li class="bracket"><a href="events.html" class="navbar">EVENTS</a></li>
-          <li class="bracket"><a href="contact.html" class="navbar">CONTACT</a></li>
-        </ul> 
-      </nav>
+     
+     <nav class="nav1"> 
+       <ul>
+         <li class="bracket"><a href="index.html" class="navbar">HOME</a></li>
+         <li class="bracket"><a href="menu.html" class="navbar">MENU</a></li>
+         <li class="logo"><a href="index.html"><img src="images/logo.png" alt="" width="150" height="150" onmouseover="this.src='images/logo2.png'" onmouseout="this.src='images/logo.png'"></a></li>
+         <li class="bracket"><a href="events.html" class="navbar">EVENTS</a></li>
+         <li class="bracket"><a href="contact.html" class="navbar">CONTACT</a></li>
+       </ul> 
+     </nav>
+     <div class="logo-name">
+      <p>Quartet Tearoom</p>
+     </div>
+      
       <nav class="nav2"> 
         <ul>
           <li class="bracket"><a href="index.html" class="navbar">HOME</a></li>
@@ -72,6 +85,9 @@
              sizes="(max-width: 500px) 300px, (max-width: 800px) 500px, (max-width: 1000px) 800px, (max-width: 1400px) 1000px, (min-width: 1601px) 1200px">
       </section>
       
+      <!--  for screen readers  -->
+      <div id="content"></div>
+      
       <section class="container">
         <div class="block1">
           <h2>Afternoon Tea</h2>
@@ -86,8 +102,8 @@
               <th></th>
             </tr>
             <tr>
-              <td>Monday to Friday:</td>
-              <td>9am - 5pm</td>
+              <td style="height: 50px">Monday to Friday:</td>
+              <td style="height: 50px">9am - 5pm</td>
             </tr>
             <tr>
               <td>Weekends:</td>
@@ -98,13 +114,27 @@
         </div>
       </section>
     
-      <!--  for screen readers  -->
-      <div id="content"></div>
+      
     </main>
     <footer>
-      <p>Quartet Tearoom</p>
-      <p>500 Victorian Ave, Seattle, WA 98101</p>
+      <div class="footer1">
+        <p>Quartet Tearoom</p>
+        <p>500 Victoria Ave, Seattle, WA 98101  &nbsp;&nbsp;&nbsp;&nbsp; &#124; &nbsp;&nbsp;&nbsp;&nbsp; 200 Garden St, Cambridge, MA 02138</p>
+      </div>
+      <div class="footer2">
+        <p>Quartet Tearoom</p>
+        <p>500 Victoria Ave, Seattle, WA 98101</p>
+        <p>200 Garden St, Cambridge, MA 02138</p>
+      </div>
+      <ul class= "icons">
+        <li><span><a href="" target="_blank"><img src="images/facebook-icon.png" alt="facebook icon" width="40"></a></span></li>
+        <li><span><a href="" target="_blank"><img src="images/instagram-icon.png" alt="instagram icon" width="40"></a></span></li>
+        <li><span><a href="" target="_blank"><img src="images/twitter-icon.png" alt="twitter icon" width="40"></a></span></li>
+        <li><span><a href="" target="_blank"><img src="images/pinterest-icon.png" alt="pinterest icon" width="40"></a></span></li>
+      </ul> 
     </footer>
-     <script type="text/javascript" src="js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>  
   </body>
+  
 </html>
