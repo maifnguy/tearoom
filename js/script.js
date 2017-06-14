@@ -1,8 +1,21 @@
-// CONTACT -- console.logs form values
-$('#submit').on('click', log);
+// CONTACT -- console.log form values
+$('#submit').on('click', function() {
+  log();
+  clearForm();
+});
+
 function log () {
-  console.log('Name: ' + $('#name').val() + ' Phone: ' + $('#tel').val() + ' Email: ' + $('#email').val() + ' Location: ' + $('#location').val() + ' Event: ' + $('#event').val() + ' Message: ' + $('#message').val());
-}
+  console.log('Name: ' + $('#name').val() + ', Phone: ' + $('#phone').val() + ', Email: ' + $('#email').val() + ', Location: ' + $('#location').val() + ', Event: ' + $('#event').val() + ', Message: ' + $('#message').val());
+};
+
+function clearForm() {
+  document.getElementById('name').value='';
+  document.getElementById('phone').value='';
+  document.getElementById('email').value='';
+  document.getElementById('location').value='';
+  document.getElementById('event').value='';
+  document.getElementById('message').value='';
+};
 
 
 // CONTACT -- slippy map 
