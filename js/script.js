@@ -6,7 +6,7 @@ $('#submit').on('click', function() {
 
 function log () {
   console.log('Name: ' + $('#name').val() + ', Phone: ' + $('#phone').val() + ', Email: ' + $('#email').val() + ', Location: ' + $('#location').val() + ', Event: ' + $('#event').val() + ', Message: ' + $('#message').val());
-};
+}
 
 function clearForm() {
   document.getElementById('name').value='';
@@ -15,7 +15,7 @@ function clearForm() {
   document.getElementById('location').value='';
   document.getElementById('event').value='';
   document.getElementById('message').value='';
-};
+}
 
 
 // CONTACT -- slippy map 
@@ -33,30 +33,31 @@ function initMap () {
 
   $('#select').on('change', function () {
     if($(this).val() == 'seattle') {
-      var latLng = new google.maps.LatLng(47.6062, -122.3321);
+      var latLng1 = new google.maps.LatLng(47.6062, -122.3321);
       map.setZoom (15);
       map.panTo(latLng);
 
-      var marker = new google.maps.Marker({
-      position: new google.maps.LatLng(47.6062, -122.3321),
-      title: 'Marker',
-      map: map,
-      draggable: true
+      var seattleMarker = new google.maps.Marker({
+        position: new google.maps.LatLng(47.6062, -122.3321),
+        title: 'Marker',
+        map: map,
+        draggable: true
       });
     } else if ($(this).val() == 'cambridge') {
-      var latLng = new google.maps.LatLng(42.3736, -71.1097);
+      var latLng2 = new google.maps.LatLng(42.3736, -71.1097);
       map.setZoom (15);
       map.panTo(latLng);
 
-      var marker = new google.maps.Marker({
-      position: new google.maps.LatLng(42.3736, -71.1097),
-      title: 'Marker',
-      map: map,
-      draggable: true
+      var cambridgeMarker = new google.maps.Marker({
+        position: new google.maps.LatLng(42.3736, -71.1097),
+        title: 'Marker',
+        map: map,
+        draggable: true
+      });
+    }
+  });
+}
 
-    })}
-  })
-};
 
 // HOME -- carousel slideshow on homepage 
 var slideIndex = 0;
@@ -67,12 +68,12 @@ function carousel() {
     var x = document.getElementsByClassName('slideshow');
     for (i = 0; i < x.length; i++) {
       x[i].style.display = 'none'; 
-    };
+    }
     slideIndex++;
-    if (slideIndex > x.length) {slideIndex = 1} 
+    if (slideIndex > x.length) {slideIndex = 1}
     x[slideIndex-1].style.display = 'block'; 
     setTimeout(carousel, 2800); 
-};
+}
 
 
 
