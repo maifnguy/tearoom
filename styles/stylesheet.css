@@ -10,6 +10,7 @@ html {
 .row:before, .row:after{
   width: 0;
 }
+
 main {
   font-family: 'Merriweather', serif;
 }
@@ -454,7 +455,7 @@ h3 {
 
 /* ----- CONTACT -----*/
 .contact-form {
-  width: 45%;
+  width: 50%;
   margin: 0 auto;
   margin-bottom: 1rem;
 }
@@ -470,7 +471,7 @@ h3 {
 }
 @media screen and (max-width: 700px){
   .contact-form {
-    width: 75%;
+    width: 80%;
   }
 }
 textarea {
@@ -488,9 +489,6 @@ textarea {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
-.add-map {
-  width: 85%;
 }
 #google-map {
   margin: 0 auto;
