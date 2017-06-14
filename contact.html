@@ -33,15 +33,15 @@
   
   <body>
    <header> 
-     <!--  For screen readers  ----------------->
+     <!--  For screen readers -->
      <a href="#content" class="offscreen">Skip to content</a> 
 
-     <!-- Center logo --------------------------> 
+     <!-- Center logo --> 
      <div class="logo2">
        <a href="index.html"><img src="images/logo.png" alt="" width="150" height="150" onmouseover="this.src='images/logo2.png'" onmouseout="this.src='images/logo.png'"></a>
      </div>
      
-     <!-- Nav ---------------------------------->
+     <!-- Nav -->
      <nav class="nav1"> 
        <ul>
          <li class="bracket"><a href="index.html" class="navbar">HOME</a></li>
@@ -60,7 +60,7 @@
          <li class="bracket"><a href="index.html" class="navbar">HOME</a></li>
          <li class="bracket"><a href="menu.html" class="navbar">MENU</a></li>
          <li class="bracket"><a href="events.html" class="navbar">EVENTS</a></li>
-         <li class="bracket"><a href="contact.html" class="navbar">CONTACT</a></li
+         <li class="bracket"><a href="contact.html" class="navbar">CONTACT</a></li>
        </ul> 
       </nav>
     </header>
@@ -71,7 +71,7 @@
       <div id="content"></div>
       <h1>Contact and Locations</h1>
       <div class="row add-map">
-        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 contact-us">
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12 contact-us">
           <h2>Seattle</h2>
           <p><strong>Quartet Tearoom</strong><p>
           <p>500 Victoria Ave, Seattle, WA 98101</p>
@@ -84,7 +84,7 @@
           <p>quartet-cambridge@gmail.com</p>
           <p>012-345-6789</p>
         </div><br>
-        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 contact-us">
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12 contact-us">
           <h2>Map</h2>
           <form>
             <select id="select">
@@ -92,41 +92,42 @@
             <option value="cambridge" id="cambridge">Cambridge</option>
             </select>
           </form>
-          <div id="google-map" style="width:90%;height:350px;">
+          <div id="google-map" style="width:80%;height:350px;">
           </div>
         </div>
       </div>
       
-     
-      
       <div class="contact-form">
         <h3>Contact Form</h3>
-        <form>
+        <form id="form">
           <label for="name">Name</label>
-          <input type="text" name="name" required>
+          <input type="text" name="name" id="name" required>
           <label for="phone">Phone</label>
-          <input type="tel" name="tel">
+          <input type="tel" name="tel" id="phone">
           <label for="email">Email</label>
-          <input type="email" name="email">
+          <input type="email" name="email" id="email">
           <label for="location">Location</label><br>
-          <select>
+          <select id="location">
             <option value="select">Select</option>
             <option value="seattle">Seattle</option>
             <option value="cambridge">Cambridge</option>
           </select>
-          <label for="event" name="event">Events</label>
-          <select>
+          <label for="event">Events</label>
+          <select id="event">
             <option value="select">Select</option>
             <option value="birthday">Birthday Party</option>
-            <option value="special-occasion">Special Occasion</option>
+            <option value="wedding">Wedding</option>
+            <option value="anniversary">Anniversary</option>
+            <option value="shower">Shower</option>
             <option value="corporate">Corporate Party</option>
             <option value="other">Other</option>
           </select>
-          <label for="message" required>Message</label>
-          <textarea name="message"></textarea>
-          <button type="button" class="submit" name="submit">Submit</button>
+          <label for="message">Message</label>
+          <textarea name="message" id="message" required></textarea>
+          <button type="button" class="submit" name="submit" id="submit">Submit</button>
         </form>
       </div>
+    
      
     <footer>
       <div class="footer1">
@@ -145,6 +146,8 @@
         <li><span><a href="" target="_blank"><img src="images/pinterest-icon.png" alt="pinterest icon" width="40"></a></span></li>
       </ul> 
     </footer>
+    </main>
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0uReli5jlaZYstDxZBhqIqvB52UeAM4I&callback=initMap"
     async defer></script>
