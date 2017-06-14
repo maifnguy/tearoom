@@ -11,6 +11,9 @@
     <link href="https://fonts.googleapis.com/css?family=League+Script" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
     
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -57,33 +60,21 @@
       </nav>
     </header>
     <main>
-      <section class="slides">
+      <div class="slides">
         <img class="slideshow" src="images/main-img1-1200w.jpg"
              alt="a bright cozy cafe with a chandelier"
-             srcset="images/main-img1-1200w.jpg 1200w,
-                     images/main-img1-1000w.jpg 1000w,
-                     images/main-img1-800w.jpg 800w,
-                     images/main-img1-500w.jpg 500w
-                     images/main-img1-300w.jpg 300w"
+             srcset="images/main-img1-1200w.jpg 1200w, images/main-img1-1000w.jpg 1000w, images/main-img1-800w.jpg 800w, images/main-img1-500w.jpg 500w, images/main-img1-300w.jpg 300w"
              sizes="(max-width: 500px) 300px, (max-width: 800px) 500px, (max-width: 1000px) 800px, (max-width: 1400px) 1000px, (min-width: 1600px) 1200px">
         <img class="slideshow" src="images/main-img2-1200w.jpg"
              alt="cafe counter with snacks and decorations"
-             srcset="images/main-img2-1200w.jpg 1200w,
-                     images/main-img2-1000w.jpg 1000w,
-                     images/main-img2-800w.jpg 800w,
-                     images/main-img2-500w.jpg 500w
-                     images/main-img2-300w.jpg 300w"
+             srcset="images/main-img2-1200w.jpg 1200w, images/main-img2-1000w.jpg 1000w, images/main-img2-800w.jpg 800w, images/main-img2-500w.jpg 500w, images/main-img2-300w.jpg 300w"
              sizes="(max-width: 500px) 300px, (max-width: 800px) 500px, (max-width: 1000px) 800px, (max-width: 1400px) 1000px, (min-width: 1600px) 1200px">
         
         <img class="slideshow" src="images/main-img3-1200w.jpg"
              alt="ladies dressed up to have tea and snacks"
-             srcset="images/main-img3-1200w.jpg 1200w,
-                     images/main-img3-1000w.jpg 1000w,
-                     images/main-img3-800w.jpg 800w,
-                     images/main-img3-500w.jpg 500w
-                     images/main-img3-300w.jpg 300w"
+             srcset="images/main-img3-1200w.jpg 1200w, images/main-img3-1000w.jpg 1000w, images/main-img3-800w.jpg 800w, images/main-img3-500w.jpg 500w, images/main-img3-300w.jpg 300w"
              sizes="(max-width: 500px) 300px, (max-width: 800px) 500px, (max-width: 1000px) 800px, (max-width: 1400px) 1000px, (min-width: 1601px) 1200px">
-      </section>
+      </div>
       
       <!--  for screen readers  -->
       <div id="content"></div>
@@ -110,7 +101,9 @@
               <td>8am - 6pm</td>
             </tr>
           </table>
-          <button class="booking" type="button" ><a href="https://www.opentable.com" target="_blank">Book a Table</a></button>
+          <form action="https://www.opentable.com" target="_blank">
+            <input type="submit" value="Book a Table" class="booking"/>
+          </form>
         </div>
       </section>
     
@@ -133,7 +126,7 @@
         <li><span><a href="" target="_blank"><img src="images/pinterest-icon.png" alt="pinterest icon" width="40"></a></span></li>
       </ul> 
     </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    
     <script type="text/javascript" src="js/script.js"></script>  
   </body>
   
