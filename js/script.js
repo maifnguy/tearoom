@@ -33,7 +33,7 @@ function initMap () {
 
   $('#select').on('change', function () {
     if($(this).val() == 'seattle') {
-      var latLng1 = new google.maps.LatLng(47.6062, -122.3321);
+      var latLng = new google.maps.LatLng(47.6062, -122.3321);
       map.setZoom (15);
       map.panTo(latLng);
 
@@ -44,7 +44,7 @@ function initMap () {
         draggable: true
       });
     } else if ($(this).val() == 'cambridge') {
-      var latLng2 = new google.maps.LatLng(42.3736, -71.1097);
+      var latLng = new google.maps.LatLng(42.3736, -71.1097);
       map.setZoom (15);
       map.panTo(latLng);
 
